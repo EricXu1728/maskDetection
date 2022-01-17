@@ -2,7 +2,7 @@
 
 <h4>The Mask-Wearing Detection a basic Convolutional Neural Network (CNN) is to detect if a person wear a mask. The system is implemented in Pytorch by a high school student. </h4>
 
-<img src="readmeImages/faces.png" width="130">
+<img src="readmeImages/faces.png" width="260">
 
 ---
 
@@ -29,7 +29,7 @@ The number of train set is 4324. The number of test set is 258. The number of va
 - The CNN-based face mask detection is implemented in Pytorch. The overall accuracy is 96.51% with F1-score of 97%. Note our F1-score outperforms the popular [project](https://github.com/chandrikadeb7/Face-Mask-Detection) on Github with F1-score 93%. The Confusion Matrix to evaluated the training and testing results is shown below.
 
 <p align="center">
-<img src="readmeImages/confusionMatrix.jpg" width="130">
+<img src="readmeImages/confusionMatrix.jpg" width="450">
 </p>
 
 - The training model is available [here](model/model.pt).
