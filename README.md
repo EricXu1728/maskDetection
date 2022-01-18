@@ -2,7 +2,7 @@
 
 <h4>The Mask-Wearing Detection a basic Convolutional Neural Network (CNN) is to detect if a person wear a mask. The system is implemented in Pytorch by a high school student. </h4>
 
-<img src="readmeImages/faces.png" width="260">
+<img src="readmeImages/faces.png" width="300">
 
 ---
 
@@ -29,7 +29,7 @@ The number of train set is 4324. The number of test set is 258. The number of va
 - The CNN-based face mask detection is implemented in Pytorch. The overall accuracy is 96.51% with F1-score of 97%. Note our F1-score outperforms the popular [project](https://github.com/chandrikadeb7/Face-Mask-Detection) on Github with F1-score 93%. The Confusion Matrix to evaluated the training and testing results is shown below.
 
 <p align="center">
-<img src="readmeImages/confusionMatrix.jpg" width="450">
+<img src="readmeImages/confusionMatrix.jpg" width="400">
 </p>
 
 - The training model is available [here](model/model.pt).
@@ -38,19 +38,19 @@ The number of train set is 4324. The number of test set is 258. The number of va
 
 ## Document
 
-There is only one Jupiter notebook file in the project root. The notebook is divided into the following sections
+The [notebook](wearclassifier.ipynb) is divided into the following sections
 
 - Import libraries
   - numpy, panda, torch, torchvision, sklearn, matplotlib, Image, etc
 - Utility functions for saving and loading models
 - Show the project folder structure
   - Pytorch provides a default folder structure for easy loading training and testing images
-- Data pre-processing
+- Data pre-processing ([Part 1](1_intro_image_preprocessing.ipynb) and [Part 2](2_intro_image_normalize.ipynb))
   - The model is able to identify the images correctly irrespective of the size and positioning of an image
   - The transforming functions include transforms.Resize(), transforms.CenterCrop(), transforms.RandomRotation(), transforms.ToTensor(), etc
 - Show example images after pre-processing
   - To verify the training or testing images
-- CNN model definition
+- CNN model [definition](3_intro_cnn_arthitecture.ipynb)
   - Convolution (conv)
   - Pooling (pool)
   - Fully connected (FC)
